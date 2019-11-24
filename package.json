@@ -1,0 +1,32 @@
+{
+  "name": "vue-easy-loader",
+  "version": "0.0.0",
+  "description": "Automatic component loader based on folder tree presented as a vue plugin",
+  "main": "index.js",
+  "scripts": {
+    "cz-init": "npx commitizen init cz-conventional-changelog --save-dev --save-exact --force",
+    "withproxy": "git config --global --add url.\\\"https://\\\".insteadOf ssh://",
+    "test": "echo \"No test specified\" && exit 0",
+    "lint": "echo \"No lint specified\" && exit 0",
+    "prod": "echo \"No prod specified\" && exit 0"
+  },
+  "author": "tomgrv",
+  "license": "MIT",
+  "dependencies": {
+    "kind-of": "^6.0.2"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.23",
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm version 0.0.0 --allow-same-version --no-git-tag-version"
+    }
+  }
+}

@@ -13,7 +13,7 @@
   "author": "tomgrv",
   "license": "MIT",
   "dependencies": {
-    "kind-of": "^6.0.2"
+    "kind-of": "^6.0.3"
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.23",
